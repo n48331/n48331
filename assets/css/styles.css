@@ -486,38 +486,36 @@ display: none;
 
 
 .skills__html{
-  width: 95%;
+  width: 80%;
 }
 .skills__css{
-  width: 85%;
+  width: 60%;
 }
 .skills__js{
   width: 65%;
 }
 .skills__react{
-  width: 85%;
-}
-.skills__php{
-  width: 95%;
-}
-.skills__node{
-  width: 85%;
-}
-.skills__firebase{
-  width: 55%;
+  width: 45%;
 }
 .skills__python{
-  width: 60%;
-}
-.skills__figma{
   width: 90%;
 }
-.skills__sketch{
+.skills__django{
   width: 75%;
 }
-.skills__photoshop{
-  width: 50%;
+.skills__firebase{
+  width: 35%;
 }
+.skills__java{
+  width: 60%;
+}
+
+.skills__flutter{
+  width: 55%;
+}
+/* .skills__photoshop{
+  width: 50%;
+} */
 
 .skills__close .skills__list{
   height: 0;
