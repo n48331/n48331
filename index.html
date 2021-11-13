@@ -13,6 +13,8 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <title>Nabeel</title>
     </head>
     <body>
@@ -139,7 +141,7 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
+            <section class="about section" id="about" data-aos="zoom-in-up">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My indroduction</span>
                 <div class="about__container container grid">
@@ -187,7 +189,7 @@
             </section>
 
             <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+            <section class="skills section" id="skills" data-aos="fade-left">
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level</span>
 
@@ -373,7 +375,7 @@
             </section>
 
             <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+            <section class="qualification section" data-aos="fade-right">
                 <h2 class="section__title">Qualification</h2>
                 <span class="section__subtitle">My personal journey</span>
 
@@ -534,7 +536,7 @@
             </section>
 
             <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
+            <section class="services section" id="services" data-aos="slide-left">
                 <h2 class="section__title">Services</h2>
                 <span class="section__subtitle">What i offer (currently services are unavailable, focusing on studies )</span>
 
@@ -673,7 +675,7 @@
             </section>
 
             <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
+            <section class="portfolio section" id="portfolio" data-aos="zoom-in">
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">Most recent work</span>
                 
@@ -738,7 +740,7 @@
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+            <section class="project section" data-aos="flip-up">
                 <div class="project__bg">
                     <div class="project__container container grid">
                         <div class="project__data">
@@ -852,7 +854,7 @@
             </section> -->
 
             <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
+            <section class="contact section" id="contact" data-aos="fade-up">
                 <h2 class="section__title">Contact Me</h2>
                 <span class="section__subtitle">Get in touch</span>
                 <div class="contact__container container grid">
@@ -971,5 +973,18 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="./assets/js/main.js"></script>
+        <!--==================== Animate on Scroll====================-->
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init(
+            {
+                offset: 400, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 1000 // values from 0 to 3000, with step 50ms
+              }
+          );
+        </script>
+      
     </body>
 </html>
