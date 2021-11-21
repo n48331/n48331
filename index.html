@@ -14,6 +14,8 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <!-- Import the component -->
+ <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
         <title>Nabeel</title>
     </head>
@@ -92,7 +94,7 @@
                         </div>
                     <!-- Change it to 3D -->
                         <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
@@ -104,9 +106,14 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x='12' y ='18' xlink:href="assets\img\MNP_logo.png"/>
+
+                                    
+                                    <image class="home__blob-img" x='15' y ='13' xlink:href="assets\img\MNP_logo.png"/>
                                 </g>
-                            </svg>
+                            </svg> -->
+                            <model-viewer style=" width: 250px;
+                            height: 350px;" src = 'assets\3d\Desk.glb' camera-controls auto-rotate disable-zoom 
+                            interaction-prompt="none" rotation-per-second="45deg" auto-rotate-delay="1000" camera-orbit="180deg 75deg 3.1m"></model-viewer> 
                         </div>
 
 

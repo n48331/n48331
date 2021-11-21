@@ -284,7 +284,7 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 170px;
+  width: 270px;
 }
 .home__data{
   grid-column: 1/3;
@@ -998,6 +998,8 @@ margin-bottom: var(--mb-0-75);
   .testimonial__description{
     text-align: center;
   }
+
+
 
 }
 /* For medium devices */
