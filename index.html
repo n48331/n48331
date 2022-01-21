@@ -975,29 +975,29 @@
                         </div>
                     </div>
 
-                <form id="GFG" action="mailto:mnabeel4477@gmail.com" class="contact__form grid"method="post" enctype="text/plain" >
+                <form id="GFG" action="#" class="contact__form grid"method="post" enctype="text/plain" >
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input" name="name">
+                            <input id="name" type="text" class="contact__input" name="name">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input" name="mail">
+                            <input id="email" type="email" class="contact__input" name="mail">
                         </div>
                         
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input" name="project" >
+                        <input id="project" type="text" class="contact__input" name="project" >
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Messege</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input" name="messege"></textarea>
+                        <label for="" class="contact__label">Message</label>
+                        <textarea  name="" id="message" cols="0" rows="7" class="contact__input" name="messege"></textarea>
                     </div>
                     <div>
-                        <a href="javascript:{}" onclick="document.getElementById('GFG').submit();" class="button button--flex">
-                            Send Messege
+                        <a  onclick=sndMsg() class="button button--flex">
+                          Send Message
                         <i class="uil uil-message button__icon"></i>
 
                         </a>
@@ -1071,6 +1071,32 @@
               }
           );
         </script>
-      
+   
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>        
+<script>
+
+const form = document.querySelector('#GFG');
+function sndMsg(e){
+
+name = document.querySelector('#name');
+email = document.querySelector('#email');
+project = document.querySelector('#project');
+message = document.querySelector('#message');
+
+
+Email.send({
+    SecureToken : "7d0731fd-2708-460c-8601-b786103aecb2",
+    To : 'unfolks@gmail.com',
+    From : email.value,
+    Subject : "Contact Form",
+    Body : message.value
+}).then(
+  message => alert(message)
+);
+}
+
+</script>
+
     </body>
 </html>
