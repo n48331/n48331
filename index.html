@@ -1087,17 +1087,13 @@
     var body = "Name : " + name + "<br> Email : " + email + "<br><h2>Subject</h2> : " + project + "<br><br>  "+ message
     console.log(body)
     Email.send({
-        SecureToken : "7d0731fd-2708-460c-8601-b786103aecb2",
+        SecureToken : "2fc17b35-1f4d-4083-b645-f8ebf0210f94",
         To : "unfolks@gmail.com",
         From : email,
-        Subject : "Contact Form",
+        Subject : "From mnabeel.cf",
         Body : body
     }).then(
-      message =>{
-          if(message=="OK")
-          alert("Mail sent")
-          else alert("Some Error Occurred")
-      }
+      message => alert(message)
     );
     }
     
