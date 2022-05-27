@@ -546,7 +546,6 @@
             <section class="services section" id="services" >
                 <h2 class="section__title">Services</h2>
                 <span class="section__subtitle">What i offer <br>
-                     <font color = '#FF7F7F'>(currently services are not available, focusing on studies <i class="uil uil-smile"></i> )</font></span>
 
                 <div class="services__container container grid" data-aos="fade-up">
                     
@@ -577,16 +576,16 @@
                                     <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>React Js Based Web App</p>
                                 </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Web Apps with Next.js</p>
+                                </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Web Apps with PHP</p>
                                 </li>
-<!-- 
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                                </li> -->
+
                             </ul>
                         </div>
                     </div>
@@ -625,10 +624,10 @@
                                 <p>React Js interface</p>
                             </li>
 
-                            <!-- <li class="services__modal-service">
+                            <li class="services__modal-service">
                                 <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                            </li> -->
+                                <p>Next Js UI</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -680,10 +679,11 @@
 
 
             </div>
-                
-                <span class="section__subtitle">
-                     <font color = '#a0a0a0'>(If your bussiness is located in chungam/petta ,Feroke, Calicut, Kerala, India All Services are FREE <i class="uil uil-smile"></i> )</font></span>
-
+            
+            
+            <span class="section__subtitle" style="margin-top:25px ;">
+                 <font color = '#a0a0a0'>(If your bussiness is located with PIN Code 673631 All Services are FREE <i class="uil uil-smile"></i> )</font>
+            </span>
                 <div class="services__container container grid" data-aos="fade-up">
             </section>
 
@@ -697,7 +697,20 @@
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1====================-->
                         <div class="portfolio__content grid swiper-slide">
-                          <img src="./assets/img/portfolio1.jpg" alt="  " class="portfolio__img">
+                          <img src="./assets/img/portfolio-youser.jpg" alt="  " class="portfolio__img">
+                        
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">YouSer Web App</h3>
+                            <p class="portfolio__description">Make YouSer connections find YouSer Solutions</p>
+
+                            <a href="https://www.youserapp.cf/" class="button button--flex button--small portfolio__button">Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                        </div>
+                        <!--==================== PORTFOLIO 1====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./assets/img/portfolio1.jpg" alt="  " class="portfolio__img">
                         
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Django Web App</h3>
@@ -708,7 +721,6 @@
                             </a>
                         </div>
                         </div>
-
                     <!--==================== PORTFOLIO 2====================-->
                     <div class="portfolio__content grid swiper-slide">
                         <img src="./assets/img/portfolio2.jpg" alt="  " class="portfolio__img">
@@ -728,7 +740,7 @@
                     
                     <!--==================== PORTFOLIO 3====================-->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio3.jpg" alt="  " class="portfolio__img">
+                        <img src="./assets/img/portfolio-cafe.jpg" alt="  " class="portfolio__img">
                     
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">Restaurant  website</h3>
@@ -736,7 +748,7 @@
                            Simple restaurant Website and menu with ReactJs. Sample project.
                         </p>
 
-                        <a href="restaurant-website/" class="button button--flex button--small portfolio__button">Demo
+                        <a href="https://cafepasto.cf/" class="button button--flex button--small portfolio__button">Demo
                             <i class="uil uil-arrow-right button__icon"></i>
                         </a>
                     </div>
@@ -1004,7 +1016,7 @@
                         </div>
                     </div>
 
-                <form id="GFG" action="https://formsubmit.co/f25fa605abb2c979e77ed4c68a5676b7" class="contact__form grid"method="post" enctype="text/plain" >
+                <form id="GFG" action="" class="contact__form grid"method="post" enctype="text/plain" >
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
@@ -1025,7 +1037,7 @@
                         <textarea  name="" id="message" cols="0" rows="7" class="contact__input" name="messege"></textarea>
                     </div>
                     <div>
-                        <a  onclick="sndMsg()" class="button button--flex">
+                        <a href="#contact" onclick="sndMsg()"  class="button button--flex">
                           Send Message
                         <i class="uil uil-message button__icon"></i>
                     </a>
@@ -1105,9 +1117,20 @@
 <script>
 
    
-    function sndMsg(){
-document.getElementById('GFG').submit();
-    }
+function sndMsg() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var project = document.getElementById("project").value;
+    var message = document.getElementById("message").value;
+    
+    msg = 'Name : '+ name +' | '+ 'Email : '+ email+' | ' + 'Project : '+ project+' | ' +'Message : '+  message;
+	let url = 'https://api.whatsapp.com/send?';
+	let params = new URLSearchParams('');
+	params.append('phone', '918136927418');
+	params.append('text', msg);
+	window.location.replace(url + params.toString());
+}
+
     
     </script>
     </body>
