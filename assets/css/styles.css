@@ -89,7 +89,7 @@ body.dark-theme {
 
 /*========== Typing Effect ==========*/
 .text{
-  color: var(--first-color);
+  color: var(--first-color-second);
 
 }
 .container p span.typed-text {
