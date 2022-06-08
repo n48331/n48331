@@ -5,8 +5,6 @@
 
 
 
-.sign {
-}
 
 :root {
   --header-height: 3rem;
@@ -87,6 +85,33 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+/*========== Typing Effect ==========*/
+.text{
+  color: var(--first-color);
+
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: var(--first-color);
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
 
 /*========== Button Dark/Light ==========*/
