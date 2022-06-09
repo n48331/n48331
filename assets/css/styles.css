@@ -98,12 +98,12 @@ body.dark-theme {
 .container p span.typed-text {
   font-weight: 800;
   color: var(--title-color);
-  font-size: 1.5rem;
+  font-size: var(--h3-font-size);
 }
 
 .container p span.cursor {
   display: inline-block;
-  background-color: #ccc;
+  background-color: var(--first-color);
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
@@ -115,11 +115,11 @@ body.dark-theme {
 
 @keyframes blink {
   0% {
-    background-color: #ccc;
+    background-color: var(--first-color-second);
   }
 
   49% {
-    background-color: #ccc;
+    background-color: var(--first-color-second);
   }
 
   50% {
@@ -131,7 +131,7 @@ body.dark-theme {
   }
 
   100% {
-    background-color: #ccc;
+    background-color: var(--first-color-second);
   }
 }
 
