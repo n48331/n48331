@@ -88,14 +88,19 @@ body.dark-theme {
 }
 
 /*========== Typing Effect ==========*/
-.text{
+.text {
   color: var(--title-color);
+  font-size: larger;
+  font-weight: 800;
 
 }
+
 .container p span.typed-text {
-  font-weight: normal;
+  font-weight: 800;
   color: var(--title-color);
+  font-size: 1.5rem;
 }
+
 .container p span.cursor {
   display: inline-block;
   background-color: #ccc;
@@ -103,15 +108,31 @@ body.dark-theme {
   width: 3px;
   animation: blink 1s infinite;
 }
+
 .container p span.cursor.typing {
   animation: none;
 }
+
 @keyframes blink {
-  0%  { background-color: #ccc; }
-  49% { background-color: #ccc; }
-  50% { background-color: transparent; }
-  99% { background-color: transparent; }
-  100%  { background-color: #ccc; }
+  0% {
+    background-color: #ccc;
+  }
+
+  49% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: #ccc;
+  }
 }
 
 /*========== Button Dark/Light ==========*/
