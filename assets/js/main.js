@@ -334,3 +334,23 @@ const next = () => {
 }
 
 next()
+// ——————————————————————————————————————————————————
+// OPen website
+// ——————————————————————————————————————————————————
+
+
+function currentTime() {
+    let date = new Date();
+    let hh = date.getHours();
+    let mm = date.getMinutes();
+    console.log(hh + ":" + mm);
+    if (hh == 10 && mm == 00) {
+        window.location.replace("/HBDay/");
+    }
+    let t = setTimeout(function () {
+
+        currentTime()
+
+    }, 1000);
+}
+currentTime();
