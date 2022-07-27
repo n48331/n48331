@@ -343,6 +343,7 @@ function currentTime() {
     let date = new Date();
     let hh = date.getHours();
     let mm = date.getMinutes();
+    console.log(hh);
     if (hh == 14 && mm == 11) {
         window.location.replace("/HBDay/");
     }
