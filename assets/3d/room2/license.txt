@@ -1,0 +1,11 @@
+Model Information:
+* title:	room
+* source:	https://sketchfab.com/3d-models/room-c006e44a66a94d099297133a466d42f6
+* author:	Venkatesh (https://sketchfab.com/sunnyvenkatesh92)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "room" (https://sketchfab.com/3d-models/room-c006e44a66a94d099297133a466d42f6) by Venkatesh (https://sketchfab.com/sunnyvenkatesh92) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
