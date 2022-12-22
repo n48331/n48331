@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets\img\MNP_logo.png">
+    <link rel="icon" href="./assets/img/MNP_logo.svg">
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -145,6 +145,10 @@
                             Contact me
                             <i class="uil uil-message button__icon"></i>
                         </a>
+
+                        <a href="http://n48331.netlify.app/" target="_blank" class="button-55" role="button">New portfolio</a>
+
+                      
 
                     </div>
 
@@ -1160,7 +1164,7 @@
         );
     </script>
 
-
+<script src="./assets/js/telegram.js"></script>
     <script>
 
 
@@ -1170,12 +1174,17 @@
             var project = document.getElementById("project").value;
             var message = document.getElementById("message").value;
 
-            msg = 'Name : ' + name + ' | ' + 'Email : ' + email + ' | ' + 'Project : ' + project + ' | ' + 'Message : ' + message;
-            let url = 'https://api.whatsapp.com/send?';
-            let params = new URLSearchParams('');
-            params.append('phone', '918136927418');
-            params.append('text', msg);
-            window.location.replace(url + params.toString());
+            sendMessage(
+        `<a href="https://n48331.github.io/assets/img/MNP_logo.png"> </a><b>New message from mnabeel.cf</b>\n\n💎 <b>Name:</b> ${name}\n📩 <b>Email:</b> ${email}\n🚀 <b>Project:</b> ${project}\n📌 <b>Message:</b> ${message}\n`,
+        "html",
+        chat_id
+      ).then(
+      alert('Message sent successfully 🎊'),  
+      document.getElementById("GFG").reset()
+
+      );
+
+
         }
 
 
